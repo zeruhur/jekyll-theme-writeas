@@ -1,0 +1,131 @@
+@font-face {
+	font-family: 'Lora';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url('../fonts/lora-400.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/lora-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/lora-400.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/lora-400.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/lora-400.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/lora-400.svg#Lora') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Lora';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 500;
+	src: url('../fonts/lora-500.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/lora-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/lora-500.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/lora-500.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/lora-500.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/lora-500.svg#Lora') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Lora';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 600;
+	src: url('../fonts/lora-600.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/lora-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/lora-600.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/lora-600.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/lora-600.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/lora-600.svg#Lora') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Lora';
+	font-style: italic;
+	font-display: swap;
+	font-weight: 400;
+	src: url('../fonts/lora-400i.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/lora-400i.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/lora-400i.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/lora-400i.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/lora-400i.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/lora-400i.svg#Lora') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Lora';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: url('../fonts/lora-700.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/lora-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/lora-700.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/lora-700.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/lora-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/lora-700.svg#Lora') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Lora';
+	font-style: italic;
+	font-display: swap;
+	font-weight: 500;
+	src: url('../fonts/lora-500i.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/lora-500i.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/lora-500i.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/lora-500i.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/lora-500i.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/lora-500i.svg#Lora') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Lora';
+	font-style: italic;
+	font-display: swap;
+	font-weight: 600;
+	src: url('../fonts/lora-600i.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/lora-600i.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/lora-600i.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/lora-600i.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/lora-600i.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/lora-600i.svg#Lora') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Lora';
+	font-style: italic;
+	font-display: swap;
+	font-weight: 700;
+	src: url('../fonts/lora-700i.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/lora-700i.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/lora-700i.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/lora-700i.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/lora-700i.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/lora-700i.svg#Lora') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url('../fonts/open-sans-400.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/open-sans-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/open-sans-400.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/open-sans-400.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/open-sans-400.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/open-sans-400.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: url('../fonts/open-sans-700.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/open-sans-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/open-sans-700.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/open-sans-700.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/open-sans-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/open-sans-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+}

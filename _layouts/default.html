@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}</title>
+		<link rel="stylesheet" href="{{ '/assets/css/normalize.css' | relative_url }}">
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+		<link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
+		<link rel="preload" href="{{ '/assets/fonts/lora-400.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin="anonymous">
+		<link rel="preload" href="{{ '/assets/fonts/lora-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="{{ '/assets/fonts/lora-700.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin="anonymous">
+		<link rel="preload" href="{{ '/assets/fonts/lora-700.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin="anonymous">
+	</head>
+	{{ content }}
+</html>

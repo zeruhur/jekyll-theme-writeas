@@ -1,0 +1,274 @@
+---
+---
+
+$serif: 'Lora', 'Palatino Linotype', 'Book Antiqua', 'New York', 'DejaVu serif', 'Times New Roman', serif;
+$sans-serif: 'Open Sans', 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+$monospace: 'Hack', 'consolas', 'Menlo-Regular', 'Menlo', 'Monaco', 'ubuntu mono', 'monospace', monospace;
+
+$font: {% if site.serif %}$serif{% elsif site.serif == "monospace" %}$monospace{% else %}$sans-serif{% endif %};
+
+$ui-color: {{ site.background | default: '#f5f5f5' }};
+$text-color: {{ site.text | default: '#111' }};
+$accent-color: {{ site.accent | default: '#777' }};
+$link-color: {{ site.link | default: '#9f9fff' }};
+$code-color: {{ site.code | default: '#586e75' }};
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: $font;
+	font-size-adjust: .5;
+	background-color: $ui-color;
+	color: $text-color;
+	header {
+		nav {
+			display: inline;
+			margin: 0 1em;
+			line-height: 2.4em;
+		}
+	}
+	h1, h2, h3 {
+		line-height: 1.2;
+	}
+	h4, h5, h6 {
+		margin: 1em 0;
+		font-size: 1.17em;
+	}
+	h1, nav {
+		display: inline;
+	}
+	footer {
+		font-size: 0.9em;
+		text-align: center;
+		a {
+			color: $text-color;
+		}
+		hr {
+			height: 1px;
+			background: #ddd;
+			border: 0;
+			margin: auto;
+			max-width: 40em;
+		}
+	}
+}
+
+body#home {
+	header {
+		padding: 0 1em;
+		text-align: center;
+		max-width: 50em;
+		margin: 3em auto 4em;
+		.description {
+			color: $accent-color;
+			font-size: 1.1em;
+			margin-top: .5em;
+			line-height: 1.5;
+		}
+	}
+	nav {
+		display: block;
+		margin: 1em 0;
+		a {
+			color: $accent-color;
+			margin: 0 0 0 1.25em;
+			@media (max-width: 300px) {
+				margin: 0 0 0 0.5em;
+			}
+		}
+		a:first-child {
+			margin: 0;
+		}
+	}
+	section#wrapper {
+		margin: 1em auto;
+		max-width: 50rem;
+		h1, h2, h3 {
+			margin-bottom: .25em;
+		}
+	}
+	article {
+		max-width: 40rem;
+		margin: 0 auto;
+		margin-bottom: 4em;
+		padding: 0 2rem 0;
+		p {
+			line-height: 1.5;
+		}
+	}
+	.post-title a:visited {
+		color: $text-color;
+	}
+	.post-title a:link {
+		color: $text-color;
+	}
+	.read-more {
+		color: $accent-color;
+	}
+}
+
+body#post {
+	header {
+		margin: 0 auto;
+		padding: 1em 2em;
+		opacity: 0.4;
+		transition-property: opacity;
+		transition-duration: .4s;
+		a {
+			color: $accent-color;
+		}
+		nav {
+			a {
+				margin-left: 1.5em;
+			}
+		}
+		h1 {
+			font-size: 1.6em;
+		}
+	}
+	header:hover {
+		opacity: 1;
+	}
+	article {
+		max-width: 40rem;
+		margin: 0 auto;
+		margin-bottom: 2em;
+		font-size: 1.2em;
+		line-height: 1.5;
+		#title {
+			display: block;
+			font-size: 1.5em;
+			margin-top: 0.3em;
+			margin-bottom: 0.5em;
+		}
+		time.dt-published {
+			display: block;
+			color: $accent-color;
+			margin-bottom: 1em;
+		}
+	}
+	img {
+		max-width: 100%;
+	}
+
+	blockquote {
+		quotes: none;
+		border-left: 0.3em solid #ddd;
+		padding: 0 1em;
+		margin: 0.5em;
+		color: $accent-color;
+	}
+
+	q {
+		quotes: '“' '”' '‘' '’';
+	}
+	table {
+		width: 100%;
+	}
+	table th, table td {
+		padding: 10px 15px;
+		vertical-align: middle;
+	    border: 1px solid darken($ui-color, 10%);
+	}
+	table tr:nth-child(2n), table thead tr {
+		background-color: darken($ui-color, 2%);
+	}
+	dt {
+		font-weight: bold;
+	}
+	dd {
+		margin-left: 1em;
+	}
+
+	code {
+		tr, td {
+			border: none;
+		}
+		.gutter {
+			padding: 0;
+		}
+		.lineno {
+			user-select: none;
+		}
+	}
+	.highlight pre {
+		overflow: auto;
+	}
+}
+
+a {text-decoration: none; color: $link-color;}
+
+.highlight {
+	color: $code-color;
+	width: 100%;
+	margin-left: 0;
+
+	.c  {color: #93a1a1; font-style: italic;}
+	.g  {color: #d33682;}
+	.k  {color: #859900;}
+	.l  {color: #2aa198;}
+	.n  {color: #268bd2;}
+	.ch,
+	.cm,
+	.cp,
+	.cpf,
+	.c1,
+	.cs {color: #93a1a1; font-style: italic;}
+	.gd,
+	.ge,
+	.gr,
+	.gh,
+	.gi,
+	.go,
+	.gp,
+	.gs,
+	.gu,
+	.gt {color: #d33682;}
+	.kc {color: #859900; font-weight: bold;}
+	.kd {color: #859900;}
+	.kn {color: #dc322f; font-weight: bold;}
+	.kp,
+	.kr {color: #859900;}
+	.kt {color: #859900; font-weight: bold;}
+	.ld {color: #2aa198;}
+	.m  {color: #2aa198; font-weight: bold;}
+	.s  {color: #2aa198;}
+	.na {color: #268bd2;}
+	.nb,
+	.nc {color: #cb4b16;}
+	.no,
+	.nd,
+	.ni,
+	.ne,
+	.nf,
+	.nl,
+	.nn,
+	.nx,
+	.py {color: #268bd2;}
+	.nt {color: #268bd2; font-weight: bold;}
+	.nv {color: #268bd2;}
+	.ow {color: #859900;}
+	.w  {color: #586e75;}
+	.mb,
+	.mf,
+	.mh,
+	.mi,
+	.mo {color: #2aa198; font-weight: bold;}
+	.sb,
+	.sc,
+	.sd,
+	.s2,
+	.se,
+	.sh,
+	.si,
+	.sx,
+	.sr,
+	.s1,
+	.ss {color: #2aa198;}
+	.bp {color: #cb4b16;}
+	.vc,
+	.vg,
+	.vi {color: #268bd2;}
+	.il {color: #2aa198; font-weight: bold;}
+}

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<body id="post">
+	<header>
+		<h1 dir="auto" id="blog-title"><a rel="author" href="{{ '/' | relative_url }}" class="h-card p-author">{{ site.title }}</a></h1>
+		<nav>
+			{% for link in site.links %}
+			<a class="pinned" href="{{ link[1] }}">{{ link[0] }}</a>
+			{% endfor %}
+		</nav>
+	</header>
+	<article id="post-body" class="norm h-entry ">
+		<h1 id="title" class="p-name dated">{{ page.title }}</h1>
+		<time class="dt-published" datetime="2021-01-24T20:21:14Z" pubdate="" itemprop="datePublished" content="2021-01-24 20:21:14 +0000 UTC">January 24, 2021</time>
+		<div class="e-content">
+			{{ content | markdownify | smartify }}
+		</div>
+	</article>
+	{% if site.credit %}
+	<footer>
+		<hr>
+		<nav>
+			<p style="font-size: 0.9em">published with <a class="home pubd" href="https://github.com/EthanMcBloxxer/jekyll-theme-writeas">jekyll-theme-writeas</a></p>
+		</nav>
+	</footer>
+	{% endif %}
+</body>
