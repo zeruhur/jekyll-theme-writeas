@@ -9,7 +9,7 @@ A Write.as minimal theme for Jekyll
 </div>
 
 ## Installing
-There isn't much detail in this guide , it assumes the user has expirence with Jekyll and setting up themes. Please see [JekyllRB.com](https://jekyllrb.com/docs/posts/) or gain some experience somehow.
+There isn't much detail in this guide, it assumes the user has expirence with Jekyll and setting up themes. Please see [JekyllRB.com](https://jekyllrb.com/docs/posts/) or gain some experience somehow.
 
 Add this to your site's `_config.yml`:
 ```yml
