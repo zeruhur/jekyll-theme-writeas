@@ -8,7 +8,7 @@ links:
   rss: /feed.xml
 permalink: /:title/
 credit: true # show a footer "published with jekyll-theme-writeas" (only on posts)
-baseurl: "/jekyll-theme-writeas/"
+baseurl: "/jekyll-theme-writeas"
 
 #background: "#202325"
 #text: "#dadad9"
