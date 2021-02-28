@@ -23,6 +23,7 @@ layout: default
 			</h2>
 			<time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date_to_string: 'ordinal', 'US' }}</time>
 			<div lang="en" dir="auto" class="book p-summary">
+				{{ post.url }}
 				{{ post.excerpt }}
 			</div>
 			<a class="read-more" href="{{ post.url | relative_url }}">Read more...</a>
