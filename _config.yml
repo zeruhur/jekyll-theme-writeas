@@ -5,7 +5,7 @@ subtitle: "Creator of Writeas.Jekyll" # subtitle of blog or your position / minb
 links:
   about: /about/
   contact: mailto:ethanmcbloxxer@pm.me
-  rss: /feed.xml
+  rss: /jekyll-theme-writeas/feed.xml
 permalink: /:title/
 credit: true # show a footer "published with jekyll-theme-writeas" (only on posts)
 baseurl: "/jekyll-theme-writeas"
