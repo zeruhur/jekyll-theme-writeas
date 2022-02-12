@@ -13,7 +13,7 @@ layout: default
 	</header>
 	<article id="post-body" class="norm h-entry ">
 		<h1 id="title" class="p-name dated">{{ page.title }}</h1>
-		<time class="dt-published" datetime="2021-01-24T20:21:14Z" pubdate="" itemprop="datePublished" content="2021-01-24 20:21:14 +0000 UTC">January 24, 2021</time>
+		<time class="dt-published" datetime="2021-01-24T20:21:14Z" pubdate="" itemprop="datePublished" content="2021-01-24 20:21:14 +0000 UTC">{{ page.date | date_to_string: 'ordinal', 'US' }}</time>
 		<div class="e-content">
 			{{ content | markdownify | smartify }}
 		</div>
